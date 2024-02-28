@@ -1,0 +1,24 @@
+# Unison preferences file
+root = /path/to/local/folder
+root = //Dgl-w-000000093/i/Users/daqu4/Documents/QT NinjaTrader 8 BackUps
+
+# Paths to synchronize
+path = C:/Users/daqu4/Documents/NinjaTrader 8/templates
+#path = C:/Users/daqu4/Documents/NinjaTrader 8/Workspaces
+#path = C:/Users/daqu4/Documents/NinjaTrader 8/db/day
+
+# Ignore specific file
+ignore = C:/Users/daqu4/Documents/NinjaTrader 8/Workspaces/_Workspaces.xml
+
+# Archive and delete
+backup = Name *
+backuplocation = central
+backupdir = /path/to/archive/folder
+backupprefix = 
+backupsuffix = .$VERSION.
+maxbackups = 5
+
+# Other preferences
+auto = true
+batch = true
+confirmbigdeletes = true

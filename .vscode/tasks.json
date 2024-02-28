@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Copy Unison Profile",
+            "type": "shell",
+            "command": "powershell -File ${workspaceFolder}\\copy_profile.ps1",
+            "problemMatcher": []
+        }
+    ]
+}
