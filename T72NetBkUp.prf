@@ -1,6 +1,6 @@
 # Unison preferences file
-root = C:/Users/daqu4/Documents/NinjaTrader 8
-root = //Dgl-w-000000093/i/Users/daqu4/Documents/QT NinjaTrader 8 BackUps
+root = I:/Users/daqu4/Documents/NinjaTrader 8
+root = I:/Users/daqu4/Documents/QT NinjaTrader 8 BackUps
 
 # Paths to synchronize
 path = templates
@@ -11,7 +11,7 @@ path = templates
 #path = db/replay
 
 # Ignore specific file
-ignore = C:/Users/daqu4/Documents/NinjaTrader 8/workspaces/_Workspaces.xml
+ignore = C:/Users/daqu4/Documents/NinjaTrader 8/Workspaces/_Workspaces.xml
 
 # Archive and delete
 backup = Name *
