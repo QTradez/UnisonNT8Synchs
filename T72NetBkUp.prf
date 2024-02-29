@@ -1,11 +1,8 @@
 # Unison preferences file 
-# root = "I:/Users/daqu4/Documents/NinjaTrader 8"
-# root = "I:/Users/daqu4/Documents/QT NinjaTrader 8 BackUps"
-root = I:/Users/daqu4/Documents/Uni0
-root = I:/Users/daqu4/Documents/Uni1
+root = I:/Users/daqu4/NT8Working
+root = I:/Users/daqu4/Documents/NT8ShareFilesBackUp
 
 # Paths to synchronize
-path = .
 path = templates
 #path = workspaces
 #path = db/day
@@ -19,7 +16,7 @@ ignore = Name "_Workspaces.xml"
 # Archive and delete
 backup = Name *
 backuplocation = central
-backupdir = "I:/Users/daqu4/Documents/QT NinjaTrader 8 BackUps/Archive"
+backupdir = I:/Users/daqu4/Documents/NT8ShareFilesBackUp/Archive
 backupprefix = 
 backupsuffix = .$VERSION.
 maxbackups = 5
