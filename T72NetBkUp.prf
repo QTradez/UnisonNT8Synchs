@@ -4,7 +4,7 @@ root = I:/Users/daqu4/Documents/NT8ShareFilesBackUp
 
 # Paths to synchronize
 path = templates
-#path = workspaces
+path = workspaces
 #path = db/day
 #path = db/minute
 #path = db/tick
