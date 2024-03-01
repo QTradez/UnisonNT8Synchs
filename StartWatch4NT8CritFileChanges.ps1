@@ -9,7 +9,7 @@ $trigger1 = @"
   {
     "name": "sync-trigger1",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUp"]
+    "command": ["unison", "Aw2NetBkUpTmplts"]
   }
 ]
 "@
@@ -26,7 +26,7 @@ $trigger2 = @"
   {
     "name": "sync-trigger2",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUp"]
+    "command": ["unison", "Aw2NetBkUpWkspc"]
   }
 ]
 "@
