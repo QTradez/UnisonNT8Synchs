@@ -1,0 +1,27 @@
+# Unison preferences file
+root = C:/Users/daqu4/NT8Working
+root = //Dgl-w-000000093/c/Users/daqu4/NT8ShareFilesBackUp
+
+# Paths to synchronize
+#path = templates
+path = workspaces
+#path = db/day
+#path = db/minute
+#path = db/tick
+#path = db/replay
+
+# Ignore specific file
+ignore = Name "_Workspaces.xml"
+
+# Archive and delete
+backup = Name *
+backuplocation = central
+backupdir = //Dgl-w-000000093/c/Users/daqu4/NT8ShareFilesBackUp/Archive
+backupprefix = 
+backupsuffix = .$VERSION.
+maxbackups = 5
+
+# Other preferences
+auto = true
+batch = true
+confirmbigdeletes = true
