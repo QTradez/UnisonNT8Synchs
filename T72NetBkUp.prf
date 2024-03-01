@@ -7,7 +7,7 @@ path = templates
 path = workspaces
 path = db/day
 path = db/minute
-#path = db/tick
+path = db/tick
 #path = db/replay
 
 # Ignore specific file
