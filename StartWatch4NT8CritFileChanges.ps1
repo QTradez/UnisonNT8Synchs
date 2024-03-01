@@ -15,6 +15,8 @@ $trigger1 = @"
 "@
 $trigger1 | watchman -j
 
+
+
 # Start Watchman for the second directory
 watchman watch C:/Users/daqu4/NT8Working/workspaces
 
@@ -32,8 +34,10 @@ $trigger2 = @"
 "@
 $trigger2 | watchman -j
 
+
+
 # Start Watchman for the third directory
-watchman watch C:/Users/daqu4/NT8Working/workspaces
+watchman watch C:/Users/daqu4/NT8Working/db/minute
 
 # Set up Watchman trigger for the second directory
 $trigger3 = @"
@@ -49,8 +53,10 @@ $trigger3 = @"
 "@
 $trigger3 | watchman -j
 
+
+
 # Start Watchman for the fourth directory
-watchman watch C:/Users/daqu4/NT8Working/workspaces
+watchman watch C:/Users/daqu4/NT8Working/db/replay
 
 # Set up Watchman trigger for the second directory
 $trigger4 = @"
@@ -65,3 +71,4 @@ $trigger4 = @"
 ]
 "@
 $trigger4 | watchman -j
+
