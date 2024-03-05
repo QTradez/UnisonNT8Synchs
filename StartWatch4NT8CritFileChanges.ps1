@@ -1,3 +1,11 @@
+# Create a new log file at the start of each day
+$date = Get-Date
+$logFile = "unison-$($date.ToString("yyyy-MM-dd")).log"
+
+# Start Unison with the new log file
+unison -batch -auto -silent -log -logfile $logFile
+
+
 # Start Watchman for the first directory
 watchman watch C:/Users/daqu4/NT8Working/templates
 
