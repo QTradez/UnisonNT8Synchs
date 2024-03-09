@@ -1,3 +1,11 @@
+# Create a new log file at the start of each day
+$date = Get-Date
+$logFile = "unison-$($date.ToString("yyyy-MM-dd")).log"
+
+# Start Unison with the new log file
+unison -batch -auto -silent -log -logfile $logFile
+
+
 # Start Watchman for the first directory
 watchman watch C:/Users/daqu4/NT8Working/templates
 
@@ -9,7 +17,7 @@ $trigger1 = @"
   {
     "name": "sync-trigger1",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpTmplts"]
+    "command": ["unison", "NetBkUpTmplts"]
   }
 ]
 "@
@@ -28,7 +36,7 @@ $trigger2 = @"
   {
     "name": "sync-trigger2",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpWkspc"]
+    "command": ["unison", "2NetBkUpWkspc"]
   }
 ]
 "@
@@ -47,7 +55,7 @@ $trigger3 = @"
   {
     "name": "sync-trigger3",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpDbMin"]
+    "command": ["unison", "NetBkUpDbMin"]
   }
 ]
 "@
@@ -66,7 +74,7 @@ $trigger4 = @"
   {
     "name": "sync-trigger4",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpDbReplay"]
+    "command": ["unison", "NetBkUpDbReplay"]
   }
 ]
 "@

@@ -9,7 +9,15 @@ This solution is dependent on Watchman, Unison, and a cloud filesharing applicat
 ## Dependcies
 
 [Watchman](https://facebook.github.io/watchman/)
-Installs for Windows via Chocolatey.  In PowerShell use: choco install watchman
+Installs for Windows via Chocolatey.  In PowerShell use: 
+
+```choco install watchman```
+
+If you need Choclatey open a PowerShell termincal as Admin and use:
+
+```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```
+
+I had mixed results with this on some systems it worked on others it didn't.  For one system I had to get the install from the Chocalatey folder, dig through the zip file and the contents of the \bin folder to C:\ProgramData\chocolatey\bin.
 
 [Unison](https://github.com/bcpierce00/unison) is avaliable through [cygwin](https://www.cygwin.com/) (site), [install](https://www.cygwin.com/setup-x86_64.exe).
 We use cygwin to allow use the linux tool in the Windows environment.
