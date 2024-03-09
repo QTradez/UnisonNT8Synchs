@@ -17,7 +17,7 @@ $trigger1 = @"
   {
     "name": "sync-trigger1",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpTmplts"]
+    "command": ["unison", "NetBkUpTmplts"]
   }
 ]
 "@
@@ -36,7 +36,7 @@ $trigger2 = @"
   {
     "name": "sync-trigger2",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpWkspc"]
+    "command": ["unison", "2NetBkUpWkspc"]
   }
 ]
 "@
@@ -55,7 +55,7 @@ $trigger3 = @"
   {
     "name": "sync-trigger3",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpDbMin"]
+    "command": ["unison", "NetBkUpDbMin"]
   }
 ]
 "@
@@ -74,7 +74,7 @@ $trigger4 = @"
   {
     "name": "sync-trigger4",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "Aw2NetBkUpDbReplay"]
+    "command": ["unison", "NetBkUpDbReplay"]
   }
 ]
 "@
