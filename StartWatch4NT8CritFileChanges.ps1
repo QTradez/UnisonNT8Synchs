@@ -36,7 +36,7 @@ $trigger2 = @"
   {
     "name": "sync-trigger2",
     "expression": ["anyof", ["match", "*"]],
-    "command": ["unison", "2NetBkUpWkspc"]
+    "command": ["unison", "NetBkUpWkspc"]
   }
 ]
 "@
