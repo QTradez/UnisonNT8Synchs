@@ -1,6 +1,9 @@
+# Define the Unison default folder
+$unisonFolder = "C:/path/to/unison/default/folder"
+
 # Create a new log file at the start of each day
 $date = Get-Date
-$logFile = "unison-$($date.ToString("yyyy-MM-dd")).log"
+$logFile = "$unisonFolder/unison-$($date.ToString("yyyy-MM-dd")).log"
 
 # Start Unison with the new log file
 unison -batch -auto -silent -log -logfile $logFile *>> $logFile
