@@ -3,7 +3,7 @@ $date = Get-Date
 $logFile = "unison-$($date.ToString("yyyy-MM-dd")).log"
 
 # Start Unison with the new log file
-unison -batch -auto -silent -log -logfile $logFile
+unison -batch -auto -silent -log -logfile $logFile *>> $logFile
 
 
 # Start Watchman for the first directory
