@@ -45,6 +45,8 @@ $trigger2 = @"
 "@
 $trigger2 | watchman -j
 
+# this prevents further execution of the script.  Doing this to debug operation and focus on templates and workspaces.
+exit
 
 
 # Start Watchman for the third directory
